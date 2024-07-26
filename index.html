@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/newspaper-solid.svg">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div>
+            <a href="#" onclick="reload()">
+                <img class="img" src="assets/logo.png" alt="">
+            </a>
+        </div>
+        <div>
+            <ul class="links">
+                <li id="ipl" onclick="navbarLink('ipl')">IPL</li>
+                <li id="finance" onclick="navbarLink('finance')">Finance</li>
+                <li id="politics" onclick="navbarLink('politics')">Political</li>
+                <li id="technology" onclick="navbarLink('technology')">Technology</li>
+
+            </ul>
+        </div>
+        <div>
+            <input id="search-input" type="text" placeholder="e.g. Science">
+            <button id="search-btn" class="btn">Search</button>
+        </div>
+    </nav>
+    <!-- Body Section -->
+    <section>
+        <main id="main-container">
+
+        </main>
+
+    </section>
+    <template id="template-card">
+        <div class="container">
+            <img id="card-img" src="https://placehold.co/400x200" alt="Image not avilable">
+            <h3 id="card-title">Heading</h3>
+            <p id="card-description">this is paragraph of the text Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Molestias modi
+                inventore dicta, totam eveniet ipsa</p>
+            <h4 id="card-source">this is small Heading</h4>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
